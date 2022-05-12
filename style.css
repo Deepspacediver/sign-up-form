@@ -59,13 +59,19 @@ body{
     margin-top: 7rem;
 }
 .form-wrapper{
-    width: 30vw;
-    margin: 1rem 2vw 0 3.5vw;
+    width: 60vw;
+    margin: 1rem 2vw 0 0;
+    box-sizing: border-box;
 }
-.form-wrapper form{
+.form-wrapper fieldset{
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 2rem;
+    border: 0;
+    border-left: 3.5vw solid white;
+    border-right: 20vw solid white;
+    padding: 0 0 3rem 0;
+    box-shadow: 0px 4px 0px -1px #e4e4e4;
 }
 
 label, input{
@@ -75,12 +81,17 @@ label{
     font-size: 1.5rem;
 }
 input{
+    -webkit-appearance: none;
+    appearance: none;
     padding: 5px;
     width: 12vw;
-    border: 1px solid peachpuff;
+    border: 0.5px solid #e4e4e4;
     border-radius: 0.5;
+    font-size: 1.75rem;
 }
 input[type="button"]{
+    margin-top: 30px;
+    margin-left: 3.5vw;
     background-color: #48aaad;
     padding: 15px;
     font-size: 2.2rem;
@@ -94,6 +105,4 @@ div.login-redirection{
     font-size: 1.9rem;
     display: flex;
     
-}
-
 }
