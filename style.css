@@ -87,7 +87,7 @@ label{
 input{
     padding: 5px;
     width: 12vw;
-    border: 1px solid #e4e4e4;
+    border: 1px solid #e4e4e4; 
     border-radius: 0.5;
     font-size: 1.75rem;
 }
@@ -100,8 +100,22 @@ input:focus{
 }
 input:invalid:not(:focus){
     border: 2px solid red;
+    color: red;
 }
+label[for='email']{
+    position: relative;
+    top: -34px;
 }
+input#email{
+    position: relative;
+    bottom: -17px;
+}
+.invalidPassword::after{
+    content: '* Passwords do not match';
+    font-size: 1.5rem;
+    color: red;
+}
+
 input[type="button"]{
     margin-top: 30px;
     margin-left: 3.5vw;
