@@ -110,6 +110,7 @@ input#email{
     position: relative;
     bottom: -17px;
 }
+
 .invalidPassword::after{
     content: '* Passwords do not match';
     font-size: 1.5rem;
