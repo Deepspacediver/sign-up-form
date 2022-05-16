@@ -46,7 +46,7 @@ body{
     padding: 1.5vh 0 1.5vh 0;
 }
 .logo-opaque{
-    max-height: 17vh;
+    max-height: 14vh;
 }
 .logo-text{
     color: white;
@@ -103,13 +103,16 @@ input{
 }
 input:hover{
     border: 1px solid blue;
+    border-radius: 6px;
 }
 input:focus{
     outline: none !important;
-    border: 2px solid blue;
+    border: 2.5px solid blue;
+    border-radius: 6px;
 }
 input:invalid:not(:focus){
     border: 2px solid red;
+    border-radius: 6px;
     color: red;
 }
 label[for='email']{
@@ -137,6 +140,13 @@ input[type="button"]{
     color: white;
     font-weight: bold;
 }
+input[type="button"]:focus, input[type="button"]:hover{
+    border-color: #367e80;
+}
+label[for='submit-button']{
+    max-width: 0;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
